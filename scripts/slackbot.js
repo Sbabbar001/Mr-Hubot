@@ -66,7 +66,7 @@ module.exports = function(robot) {
    robot.hear(/hi|hello/i, function(msg) {
      return msg.send("Ello im Mr Hubot");
    });
-// }
+}
 
 
 var mustache;
@@ -74,14 +74,25 @@ mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
 
 // module.exports = function(robot) {
 //   // Basic example of respond / send. If the user enters hi or hello the bot responds "Howdy!" 
-//   return robot.respond(/hi|hello/i, function(msg) {
-//     return msg.send("Howdy!");
-//   });
+  // return robot.respond(/hi|hello/i, function(msg) {
+  //   return msg.send("Howdy!");
+  // });
 
   // Random Example
   // If a user enters 'ship it' we return a random squirrel, which is popular for symbolizing shipping something with engineers
   return robot.hear(/stache/i, function(msg) {
     return msg.send(msg.random(mustache));
+  });
+
+  // return robot.hear(/Hi Hubot! My name is (.*)/i, function(msg) {
+  //   var name;
+  //   name = msg.match[1];
+  //   if (name == "Hubot"){
+  //     return msg.send("You're not Hubot--I'm Hubot!");
+  //   } else {
+  //     return msg.reply("Nice to meet you, " + name + "!");
+  //   }
+  
   });
 };
 // */
