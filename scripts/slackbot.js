@@ -70,7 +70,7 @@ module.exports = function(robot) {
 
 
 var mustache;
-mustache = ["https://goo.gl/images/vy1CLJ","https://goo.gl/images/m41UFP","https://goo.gl/images/auHYCZ","https://goo.gl/images/gca6Ac"];
+mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
 
 // module.exports = function(robot) {
 //   // Basic example of respond / send. If the user enters hi or hello the bot responds "Howdy!" 
