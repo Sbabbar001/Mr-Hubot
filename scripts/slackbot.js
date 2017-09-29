@@ -66,7 +66,7 @@ module.exports = function(robot) {
    robot.hear(/hi|hello/i, function(msg) {
      return msg.send("Ello im Mr Hubot");
    });
-}
+// }
 
 
 var mustache;
@@ -78,10 +78,10 @@ mustache = ["https://goo.gl/images/vy1CLJ","https://goo.gl/images/m41UFP","https
 //     return msg.send("Howdy!");
 //   });
 
-  Random Example
+  // Random Example
   // If a user enters 'ship it' we return a random squirrel, which is popular for symbolizing shipping something with engineers
   return robot.hear(/stache/i, function(msg) {
     return msg.send(msg.random(mustache));
   });
 };
-*/
+// */
