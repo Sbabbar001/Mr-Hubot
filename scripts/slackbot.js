@@ -94,5 +94,5 @@ mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
   //   }
   
   // });
-});
+};
 // */
