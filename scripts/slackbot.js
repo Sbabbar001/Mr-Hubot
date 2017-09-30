@@ -93,6 +93,6 @@ mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
   //     return msg.reply("Nice to meet you, " + name + "!");
   //   }
   
-  });
-};
+  // });
+// };
 // */
