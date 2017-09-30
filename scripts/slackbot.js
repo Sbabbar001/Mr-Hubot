@@ -63,7 +63,7 @@ you need to move the contents of module.exports below into the module.exports co
 module.exports = function(robot) {
   //  YOUR CODE HERE
   //  Example
-   robot.hear(/hi|hello/i, function(msg) {
+   robot.respond(/hi|hello/i, function(msg) {
      return msg.send("Ello im Mr Hubot");
    });
 
@@ -80,7 +80,7 @@ mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
 
   // Random Example
   // If a user enters 'ship it' we return a random squirrel, which is popular for symbolizing shipping something with engineers
-  return robot.hear(/stache/i, function(msg) {
+  return robot.respond(/trigger/i, function(msg) {
     return msg.send(msg.random(mustache));
   });
 
@@ -94,5 +94,5 @@ mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
   //   }
   
   // });
-};
+});
 // */
