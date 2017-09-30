@@ -66,7 +66,7 @@ module.exports = function(robot) {
    robot.hear(/hi|hello/i, function(msg) {
      return msg.send("Ello im Mr Hubot");
    });
-}
+
 
 
 var mustache;
@@ -94,5 +94,5 @@ mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
   //   }
   
   // });
-// };
+});
 // */
