@@ -67,6 +67,13 @@ module.exports = function(robot) {
      return msg.send("Ello im Mr Hubot");
    });
 
+   var profilePic;
+   profilePic = ["https://i.pinimg.com/736x/0a/9f/03/0a9f0396b86d34822c08655cf738b70c--manga-anime-robots.jpg"];
+
+   robot.respond(/about/i, function(msg) {
+    return msg.send("Ello! I am your friendly hubot gental man named MR Hubot. I am here at your assistance. How may I help you, I cant wait!" + profilePic);
+
+  });
 
 
 var mustache;
