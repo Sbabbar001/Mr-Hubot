@@ -63,21 +63,34 @@ you need to move the contents of module.exports below into the module.exports co
 module.exports = function(robot) {
   //  YOUR CODE HERE
   //  Example
-   robot.respond(/hi|hello/i, function(msg) {
+
+  // Greeting ********
+  // type "hi" or "hello" 
+  // MR Hubot will reply back "Ello im MR Hubot"
+   robot.respond(/hi mr hubot/i, function(msg) {
      return msg.send("Ello im Mr Hubot");
    });
-
+  
+  // Bio *******
+  //  type "about" 
+  // MR Hubot will show
+  // 1- profile picture of MR Hubot and 
+  // 2- a description of him
    var profilePic;
    profilePic = ["https://i.pinimg.com/736x/0a/9f/03/0a9f0396b86d34822c08655cf738b70c--manga-anime-robots.jpg"];
 
+
    robot.respond(/about/i, function(msg) {
-    return msg.send("Ello! I am your friendly hubot gental man named MR Hubot. I am here at your assistance. How may I help you, I cant wait!" + profilePic);
+    return msg.send("Ello! I am your friendly hubot gental man named MR Hubot. I am here at your assistance. How may I help you, I cant wait! I love a good mustache just type -show me silly- and I will share my collection of mustaches to keep you smiling through the day " + profilePic);
 
   });
 
+  // Mustache Photos *******
+  // type "show me silly"
+  // MR Hubot will generate random mustache photos to keep you smiling
 
-var mustache;
-mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
+var mustachePictures;
+mustachePictures = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg","https://digital.ungerboeck.com/images/mustache-tutorial.jpg", "http://www.treefortbikes.com/images/raw/TF-HB1012.jpg", "http://cliparting.com/wp-content/uploads/2016/06/Curly-moustache-clipart-hipster-moustache-mustache-stache.png","https://ih1.redbubble.net/image.216622373.1718/flat,800x800,075,f.u3.jpg"];
 
 // module.exports = function(robot) {
 //   // Basic example of respond / send. If the user enters hi or hello the bot responds "Howdy!" 
@@ -87,8 +100,8 @@ mustache = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"];
 
   // Random Example
   // If a user enters 'ship it' we return a random squirrel, which is popular for symbolizing shipping something with engineers
-  return robot.respond(/trigger/i, function(msg) {
-    return msg.send(msg.random(mustache));
+  return robot.respond(/show me silly/i, function(msg) {
+    return msg.send(msg.random(mustachePictures));
   });
 
   // return robot.hear(/Hi Hubot! My name is (.*)/i, function(msg) {

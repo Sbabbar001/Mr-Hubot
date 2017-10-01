@@ -1,3 +1,59 @@
+
+MR Hubot
+---------
+
+About
+---------
+
+Ello! I am your friendly hubot gental man named MR Hubot. I am here at your assistance. How may I help you, I cant wait! 
+
+I love a good mustache just type -show me silly- and I will share my collection of mustaches to keep you smiling through the day 
+
+    1- Greeting 
+    says hello back to you 
+    "Ello im Mr Hubot" 
+    
+    "hi Mr Hubot"
+
+    2- About / Bio 
+    about bio with profile image 
+    
+    "Ello! I am your friendly hubot gental man named MR Hubot. I am here at your assistance. How may I help you, I cant wait! I love a good mustache just type -show me silly- and I will share my collection of mustaches to keep you smiling through the day" 
+    
+    "about"
+
+    3- Mustache photos 
+    images of mustaches to keep you smiling
+    
+    "show me silly" 
+
+Functions
+---------
+
+"hi Mr Hubot"
+---------  
+    Greeting
+
+    get a general hello reply back from MR Hubot
+    "Ello im Mr Hubot"
+
+"about"
+---------
+    About / Bio
+
+    Profile photo of MR Hubot and bio about him
+
+"show me silly"
+---------
+    Mustache photos
+
+    images of various changing mustaches to keep you smiling
+    
+
+
+
+
+***************** Below is some specifications about MR Hubot **********************
 # MR Hubot
 
 MR Hubot is a chat bot built on the [Hubot][hubot] framework. It was
