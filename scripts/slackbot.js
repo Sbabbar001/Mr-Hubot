@@ -104,6 +104,32 @@ mustachePictures = ["http://laoblogger.com/images/french-mustache-clipart-4.jpg"
     return msg.send(msg.random(mustachePictures));
   });
 
+
+// Coffee or Tea suggestion and locations (I would like this to have a google maps API but I am having troubles to get it to work) *******
+  // type "I would like some" "coffee" or "tea"
+  // MR Hubot will generate for coffee "let me show you some near by coffee spots" and show it on google maps
+  // MR Hubot will generate for tea "I know the perfect tea spots" and show it on google maps
+return robot.hear(/I would like some (.*)/i, function(msg) {
+    var tea;
+    tea = msg.match[1];
+    if (tea == "coffee"){
+      return msg.send("let me show you some near by coffee spots");
+    } else {
+      return msg.reply("I know the perfect tea spots");
+    }
+  
+  });
+
+  var tea;
+  teaLocations = ["https://www.google.com/maps/search/tea+/@37.7936661,-122.3960314,15z/data=!3m1!4b1"];
+
+  return robot.respond(/show me tea spots/i, function(msg) {
+    return msg.send(teaLocations);
+  });
+
+
+  
+  
   // return robot.hear(/Hi Hubot! My name is (.*)/i, function(msg) {
   //   var name;
   //   name = msg.match[1];

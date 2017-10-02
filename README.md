@@ -27,6 +27,17 @@ I love a good mustache just type -show me silly- and I will share my collection 
     
     "show me silly" 
 
+    4- Coffee or Tea suggestion and locations 
+    (I would like this to have a google maps API but I am having troubles to get it to work) *******
+  
+    type "I would like some" "coffee" or "tea"
+    
+    MR Hubot will generate for coffee "let me show you some near by coffee spots" and show it on google maps
+    
+    MR Hubot will generate for tea "I know the perfect tea spots" and show it on google maps
+
+    "I would like some" "coffee" or "tea"
+
 Functions
 ---------
 
@@ -48,6 +59,18 @@ Functions
     Mustache photos
 
     images of various changing mustaches to keep you smiling
+
+"I would like some" "coffee" or "tea"
+---------
+
+    Coffee or Tea suggestion and locations 
+    (I would like this to have a google maps API but I am having troubles to get it to work) *******
+  
+    type "I would like some" "coffee" or "tea"
+    
+    MR Hubot will generate for coffee "let me show you some near by coffee spots" and show it on google maps
+    
+    MR Hubot will generate for tea "I know the perfect tea spots" and show it on google maps
     
 
 
